@@ -8,8 +8,10 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=python&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
@@ -129,41 +131,57 @@ The analysis reveals **clear customer segmentation** across product lines:
 ```
 BUSINESS_CASE_STUDY_AEROFIT/
 │
-├── 📄 README.md                  # Project documentation
-├── 📑 BUSINESS_CASE_STUDY.pdf    # Detailed analysis report
-└── 📜 LICENSE                    # MIT License
+├── 📁 data/
+│   └── 📊 aerofit_treadmill.csv          # Treadmill customer dataset
+├── 📁 images/                            # Exported analysis visualizations
+├── 📄 app.py                             # Interactive Streamlit dashboard
+├── 📄 requirements.txt                   # Dependency definitions
+├── 📓 Aerofit_Descriptive_Stats.ipynb    # Descriptive stats Jupyter notebook
+├── 🐍 Aerofit_Descriptive_Stats.py       # Python counterpart of the notebook
+├── 📑 BUSINESS_CASE_STUDY.pdf            # Detailed analysis report
+└── 📜 LICENSE                            # MIT License
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 🖥️ Running the Interactive Dashboard (Streamlit)
 
-Make sure you have the following installed:
+To view the live interactive web dashboard:
 
-```bash
-Python 3.8+
-Jupyter Notebook
-```
-
-### Installation
-
-1. **Clone the repository**
+1. **Clone the repository and navigate inside**:
    ```bash
    git clone https://github.com/PritamPalit-official/BUSINESS_CASE_STUDY_AEROFIT.git
    cd BUSINESS_CASE_STUDY_AEROFIT
    ```
 
-2. **Install required libraries**
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Streamlit application**:
+   ```bash
+   streamlit run app.py
+   ```
+
+This will automatically launch the dashboard in your default browser at `http://localhost:8501`.
+
+### 📓 Running the Notebook Analysis
+
+If you'd like to explore the step-by-step Jupyter Notebook analysis:
+
+1. **Install Jupyter and base requirements**:
    ```bash
    pip install pandas numpy matplotlib seaborn jupyter
    ```
 
-3. **View the analysis report**
+2. **Launch Jupyter**:
+   ```bash
+   jupyter notebook
    ```
-   Open BUSINESS_CASE_STUDY.pdf to explore the full analysis with visualizations and insights.
-   ```
+   Open `Aerofit_Descriptive_Stats.ipynb` to see the complete exploration workflow.
 
 ---
 
